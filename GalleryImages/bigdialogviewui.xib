@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="A8z-Rq-D1b" customClass="BigDialogView" customModule="GalleryImages" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-cP-5qv">
+                    <rect key="frame" x="25" y="169" width="325" height="329"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hvW-5G-gMd">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="278"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="325" id="ldr-Bd-Oxt"/>
+                            </constraints>
+                        </imageView>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjK-B3-1YH">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="49"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-wL-7zF">
+                                    <rect key="frame" x="148" y="14" width="45" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.036619484424591064" green="0.26069247060351902" blue="0.38077026605606079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="HHA-fQ-cUG"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrT-n4-xvf">
+                            <rect key="frame" x="0.0" y="278" width="325" height="51"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kI-Sg-XX6">
+                                    <rect key="frame" x="49" y="10" width="36" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Like" image="like-social-heart-button-outline (1).png"/>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2b-eK-fzB">
+                                    <rect key="frame" x="171" y="16" width="1" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0322265625" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmP-De-Yk3">
+                                    <rect key="frame" x="239" y="10" width="40" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Share">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="RD3-1j-ucz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1101345486111111" green="0.25130208333333331" blue="0.306396484375" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="BrT-n4-xvf" firstAttribute="width" secondItem="TgR-cP-5qv" secondAttribute="width" id="1Hl-cO-hla"/>
+                        <constraint firstItem="hvW-5G-gMd" firstAttribute="top" secondItem="TgR-cP-5qv" secondAttribute="top" id="Buv-pv-lrY"/>
+                        <constraint firstItem="ZjK-B3-1YH" firstAttribute="centerX" secondItem="hvW-5G-gMd" secondAttribute="centerX" id="HRV-p6-6GS"/>
+                        <constraint firstAttribute="bottom" secondItem="BrT-n4-xvf" secondAttribute="bottom" id="O4F-aO-t0y"/>
+                        <constraint firstItem="hvW-5G-gMd" firstAttribute="width" secondItem="TgR-cP-5qv" secondAttribute="width" id="Ohx-1o-FN1"/>
+                        <constraint firstItem="ZjK-B3-1YH" firstAttribute="width" secondItem="hvW-5G-gMd" secondAttribute="width" id="OtJ-qg-QF6"/>
+                        <constraint firstAttribute="height" constant="329" id="QDV-49-xu9"/>
+                        <constraint firstItem="ZjK-B3-1YH" firstAttribute="top" secondItem="hvW-5G-gMd" secondAttribute="top" id="VOy-iu-x6s"/>
+                        <constraint firstItem="BrT-n4-xvf" firstAttribute="top" secondItem="hvW-5G-gMd" secondAttribute="bottom" id="Y1g-Ym-kxb"/>
+                        <constraint firstItem="BrT-n4-xvf" firstAttribute="top" secondItem="ZjK-B3-1YH" secondAttribute="bottom" constant="229" id="aF6-vx-WBO"/>
+                        <constraint firstItem="BrT-n4-xvf" firstAttribute="centerX" secondItem="TgR-cP-5qv" secondAttribute="centerX" id="cOf-cU-6Yj"/>
+                        <constraint firstItem="hvW-5G-gMd" firstAttribute="centerX" secondItem="TgR-cP-5qv" secondAttribute="centerX" id="f1j-K3-meg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="98e-UC-SHS" firstAttribute="bottom" secondItem="TgR-cP-5qv" secondAttribute="bottom" constant="169" id="Bwm-21-Swe"/>
+                <constraint firstItem="TgR-cP-5qv" firstAttribute="centerX" secondItem="98e-UC-SHS" secondAttribute="centerX" id="JTB-Q6-flI"/>
+                <constraint firstItem="TgR-cP-5qv" firstAttribute="top" secondItem="98e-UC-SHS" secondAttribute="top" constant="149" id="Pq9-vp-C13"/>
+                <constraint firstItem="98e-UC-SHS" firstAttribute="trailing" secondItem="TgR-cP-5qv" secondAttribute="trailing" constant="25" id="XLN-sl-lzP"/>
+                <constraint firstItem="TgR-cP-5qv" firstAttribute="leading" secondItem="98e-UC-SHS" secondAttribute="leading" constant="25" id="x0t-ez-pvX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="98e-UC-SHS"/>
+            <connections>
+                <outlet property="LblImageView" destination="hvW-5G-gMd" id="uHM-f3-8HI"/>
+                <outlet property="lblTitle" destination="iFt-wL-7zF" id="sAk-4Y-kKu"/>
+                <outletCollection property="gestureRecognizers" destination="p8W-bM-ek1" appends="YES" id="5uS-2D-Fl8"/>
+            </connections>
+            <point key="canvasLocation" x="-19.5" y="20.5"/>
+        </view>
+        <tapGestureRecognizer id="p8W-bM-ek1">
+            <connections>
+                <action selector="tapGestureAction:" destination="A8z-Rq-D1b" id="GNt-92-2Gu"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="like-social-heart-button-outline (1).png" width="128" height="128"/>
+    </resources>
+</document>
